@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:id="@+id/layout">
+    <!--<TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="Camera Demo"
+        android:textSize="24sp" />-->
+
+    <FrameLayout android:id="@+id/preview"
+        android:layout_weight="1" android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bg"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:scaleType = "centerCrop"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:foregroundGravity="center"
+            android:background="@null"
+            android:src="@drawable/buttx"
+            android:id="@+id/imageButton2"
+            />
+    </FrameLayout>
+
+    <!--<ProgressBar
+        android:layout_width="50dp" android:layout_height="50dp"
+        android:id="@+id/progressbar" style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"/> -->
+</RelativeLayout>
